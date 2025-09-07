@@ -1,4 +1,4 @@
-/*
+/* EXTRA Q
 
 Write a program to find the least common multiple (LCM) of two num-
 bers using a loop.
@@ -19,6 +19,17 @@ int main(){
 
     cout<<"enter a and b:";
     cin>> a >> b;
+
+    lcm = max(a,b);
+
+    while(true){
+        
+        if(lcm % a ==0 && lcm % b ==0){
+            cout<<"the lcm is :"<<lcm<<endl;
+            break;
+        }
+        lcm++;
+    }
 
     
     
